@@ -38,7 +38,7 @@
             <form class="form" action="" method="post">
                 {% csrf_token %}
                 <div class='sss' >
-                    {{form.title}}
+                    <input type="text" name="task" id="">
                     <button>save</button>
                 </div>
             </form>
@@ -47,13 +47,11 @@
             <table id="table">
                 <tr>
                     <th>Tasks</th>
-                    <th style="width:10%" >update</th>
                     <th style="width:10% ;">delete</th>
                 </tr>
                 {% for task in tasks %}
                 <tr>
-                    <td>{{task}}</td>
-                    <td><a href="{% url 'update_task' task.id %}">update</a></td>
+                    <td>{{task.title}}</td>
                     <td><span><a href=""><a href="{% url 'delete' task.id %}">delete</a></a></span></td>
                 </tr>
                 {% endfor %}
