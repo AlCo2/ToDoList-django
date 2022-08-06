@@ -1,0 +1,11 @@
+{% extends 'tasks/index.html' %}
+{% block test %}
+<h3>are you sure you want to delete this task: {{item}}</h3>
+
+<a href="{% url 'list' %}">cancle</a>
+
+<form action="" method="POST">
+    {% csrf_token %}
+    <input type="submit" value="yes, i am sure" name="" id="">
+</form>
+{% endblock test %}

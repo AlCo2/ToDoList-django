@@ -1,0 +1,37 @@
+body{
+    background-color:#fff685;
+}
+#title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px black solid;
+}
+#title h1{
+    font-weight: 600;
+    text-decoration: underline;
+    padding: 10px;
+    text-transform: uppercase;
+}
+#table{
+    background-color:#51e2f594 ;
+    width: 100%;
+    border: 1px solid black;
+}
+#footer{
+    position: fixed;
+    bottom: 0;
+}
+#done{
+    width: 18px;
+    height: 18px;
+}
+#head{
+    background-color:#51e2f5;
+}
+#black{
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
